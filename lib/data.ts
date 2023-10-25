@@ -3,8 +3,10 @@ import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
+//import rmtdevImg from "@/public/rmtdev.png";
+import datacollection from "@/public/datacollection.jpeg";
 import wordanalyticsImg from "@/public/wordanalytics.png";
+import { data } from "autoprefixer";
 
 export const links = [
   {
@@ -35,53 +37,77 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Frontend Developer, Pickshare GmbH",
+    location: "Dortmund, Germany",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "I have designed and implemented a feature-rich Lastmile OS dashboard with advanced filtering, seamless shipment tracking, dynamic reporting, and rigorous testing, enhancing users' ability to efficiently manage and analyze ecosystem data for package deliveries.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "May-2019 to Sep-2023",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Frontend Developer, Mykori Technologies UG, Working Student ",
+    location: "Bielefeld, Germany",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "I have extensive experience encompassing programming in JavaScript, TypeScript, ES6, CSS, and HTML, as well as designing responsive UX/UI, architecting web applications with React, mobile applications with React Native,  and conducting independent research to evaluate relevant technologies, both independently and within a team context.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "Aug-2021 to Mar-2022",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Service Delivery Specialist, IBM India Pvt Ltd",
+    location: "Bangalore, India",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "The tasks involved SAP NetWeaver 7.0 and MSSQL installation, performing a system refresh for the Sandbox system, and configuring Solution Manager along with setting up EWA Alerts.",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "Jul-2016 to Mar-2019",
+  },
+  {
+    title: "SAP Basis Administrator, Symbiosis Technologies",
+    location: "Visakhapatnam, India",
+    description:
+      "The tasks involved daily monitoring of SAP systems, performing SAP system refreshes, and SAP Note Implementations.",
+    icon: React.createElement(FaReact),
+    date: "Jul-2015 to Jul-2016",
+  },
+  {
+    title:
+      "Intern (Trained in SAP Basis Technology to support for AT&T hosted customers)",
+    location: "Bangalore, India",
+    description:
+      "The tasks involved Configuration of Central User Administration and SAP Note Implementations",
+    icon: React.createElement(FaReact),
+    date: "Jan-2015 to Jul-2015",
   },
 ] as const;
 
 export const projectsData = [
   {
     title: "CorpComment",
-    description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+    description: "Users can give public feedback to companies.",
+    tags: ["React", "Tailwind"],
     imageUrl: corpcommentImg,
     link: "https://corp-comment.netlify.app/",
   },
   {
-    title: "rmtDev",
+    title: "Data Collection Web App",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
-    link: "https://rmtdev.netlify.app/",
+      "A Web App that is used for data collection from multiple users. It has features like authentication, data collection, data visualization and data export.",
+    tags: ["React.js", "Express.js", "Mongoose", "MongoDB"],
+    imageUrl: datacollection,
+    link: "https://github.com/Manjunathkorisetru/Data-Collection-Frontend",
   },
+  // {
+  //   title: "rmtDev",
+  //   description:
+  //     "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
+  //   tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+  //   imageUrl: rmtdevImg,
+  //   link: "https://rmtdev.netlify.app/",
+  // },
   {
     title: "Word Analytics",
     description:
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+    tags: ["React", "Tailwind"],
     imageUrl: wordanalyticsImg,
     link: "https://word-analytics.netlify.app/",
   },
@@ -95,16 +121,11 @@ export const skillsData = [
   "React",
   "Next.js",
   "Node.js",
+  "Java",
   "Git",
   "Tailwind",
-  "Prisma",
   "MongoDB",
   "Redux",
-  "GraphQL",
-  "Apollo",
   "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
   "Framer Motion",
 ] as const;
