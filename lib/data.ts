@@ -4,7 +4,7 @@ import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
 //import rmtdevImg from "@/public/rmtdev.png";
-import datacollection from "@/public/datacollection.jpeg";
+import datacollection from "@/public/data-collection.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 import { data } from "autoprefixer";
 
