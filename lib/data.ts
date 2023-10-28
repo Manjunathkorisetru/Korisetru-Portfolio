@@ -81,20 +81,21 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: "Data Collection Web App",
+    description:
+      "A Web App that is used for data collection from multiple users. It has features like authentication, data collection, data visualization and data export.",
+    tags: ["React.js", "Express.js", "Mongoose", "MongoDB"],
+    imageUrl: datacollection,
+    link: "https://data-collection-web-app.netlify.app/",
+  },
+  {
     title: "CorpComment",
     description: "Users can give public feedback to companies.",
     tags: ["React", "Tailwind"],
     imageUrl: corpcommentImg,
     link: "https://corp-comment.netlify.app/",
   },
-  {
-    title: "Data Collection Web App",
-    description:
-      "A Web App that is used for data collection from multiple users. It has features like authentication, data collection, data visualization and data export.",
-    tags: ["React.js", "Express.js", "Mongoose", "MongoDB"],
-    imageUrl: datacollection,
-    link: "https://github.com/Manjunathkorisetru/Data-Collection-Frontend",
-  },
+
   // {
   //   title: "rmtDev",
   //   description:
