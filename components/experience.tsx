@@ -1,56 +1,45 @@
 "use client";
-
 import React from "react";
 import SectionHeading from "./section-heading";
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
-//import "react-vertical-timeline-component/style.min.css";
 import { experiencesData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
+import { motion } from "framer-motion";
 
 export default function Experience() {
   const { ref } = useSectionInView("Experience");
 
   return (
-    <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
+    <motion.section
+      id="experience"
+      ref={ref}
+      className="scroll-mt-28 mb-28 sm:mb-40"
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.175 }}
+    >
       <SectionHeading>My experience</SectionHeading>
-      <VerticalTimeline lineColor="#000000">
-        {experiencesData.map((experience, index) => {
-          return (
-            <React.Fragment key={index}>
-              <VerticalTimelineElement
-                //className="vertical-timeline-element--work"
-                className="max-w-2xl flex flex-col justify-center gap-4"
-                contentStyle={{
-                  background: "rgba(255, 255, 255, 0.05)",
-                  color: "#000000",
-                  boxShadow: "none",
-                  border: "1px solid rgba(0, 0, 0, 0.05)",
-                  textAlign: "left",
-                  padding: "1.3rem 2rem",
-                }}
-                date={experience.date}
-                //icon={experience.icon}
-                iconStyle={{
-                  background: "white",
-                  fontSize: "1.5rem",
-                }}
-                contentArrowStyle={{
-                  borderRight: "0.4rem solid #9ca3af",
-                }}
+      <div>
+        <div className="min-w-[100rem] h-full flex flex-col justify-center items-center border-2">
+          <div className="w-[0.25rem] bg-black top-0 flex flex-col ">
+            {experiencesData.map((experience, index) => (
+              <div
+                className={` ${
+                  index % 2 === 0 ? "self-start" : "self-end"
+                } relative`}
               >
-                <h3 className="font-semibold capitalize">{experience.title}</h3>
-                <p className="font-normal !mt-0">{experience.location}</p>
-                <p className="!mt-1 !font-normal text-gray-700 text-wrap">
-                  {experience.description}
-                </p>
-              </VerticalTimelineElement>
-            </React.Fragment>
-          );
-        })}
-      </VerticalTimeline>
-    </section>
+                <div className="absoulte right-10">manju</div>
+                <div
+                  className="last:mb-10 sm:mb-20 first:mt-10 ml-10 mr-10 
+                  scroll-mt-20 bg-gray-200 min-w-[45rem] rounded-xl p-4 flex 
+                  justify-center items-center min-h-[10rem] "
+                >
+                  <div> {experience.title}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </motion.section>
   );
 }
