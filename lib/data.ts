@@ -6,6 +6,7 @@ import corpcommentImg from "@/public/corpcomment.png";
 //import rmtdevImg from "@/public/rmtdev.png";
 import datacollection from "@/public/data-collection.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
+import FPGA from "@/public/FPGA.png";
 import { data } from "autoprefixer";
 
 export const links = [
@@ -89,6 +90,14 @@ export const projectsData = [
     link: "https://data-collection-web-app.netlify.app/",
   },
   {
+    title: "FPGA Web App",
+    description:
+      "A comprehensive database consisting of FPGA devices and their specifications from various vendors",
+    tags: ["React", "JavaScript", "MongoDB", "Express", "Mongoose"],
+    imageUrl: FPGA,
+    link: "https://fpgawebapp.netlify.app/",
+  },
+  {
     title: "CorpComment",
     description: "Users can give public feedback to companies.",
     tags: ["React", "Tailwind"],
@@ -96,14 +105,6 @@ export const projectsData = [
     link: "https://corp-comment.netlify.app/",
   },
 
-  // {
-  //   title: "rmtDev",
-  //   description:
-  //     "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-  //   tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-  //   imageUrl: rmtdevImg,
-  //   link: "https://rmtdev.netlify.app/",
-  // },
   {
     title: "Word Analytics",
     description:
