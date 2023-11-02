@@ -87,7 +87,7 @@ export const projectsData = [
       "A Web App that is used for data collection from multiple users. It has features like authentication, data collection, data visualization and data export.",
     tags: ["React.js", "Express.js", "Mongoose", "MongoDB"],
     imageUrl: datacollection,
-    link: "https://data-collection-web-app.netlify.app/",
+    link: "https://github.com/Manjunathkorisetru/Data-Collection-Frontend",
   },
   {
     title: "FPGA Web App",
